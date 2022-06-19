@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+body {
+  background:  rgb(233, 233, 233);
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+main {
+width: 90%;
+  position: absolute;
+}
+
+#logo {
+  color: black
+  !important;
+  text-decoration: none;
+  font-family: "Abril Fatface";
+}
+
+.nav-header {
+  min-height: 12vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  width: 90%;
+  margin: auto;
+  padding: 0rem 0rem;
+  z-index: 2;
+  position: relative;
+}
+.line1,
+.line2 {
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: black;
+  pointer-events: none;
+}
+.barcelona{
+  height: px;
+}
+.slide {
+  min-height:100vh;
+  height: 0px;
+  margin: 0 auto 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  background:  rgb(233, 233, 233);
+}
+
+.hero-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-basis: 25rem;
+  padding-left: 5rem;
+  position: relative;
+}
+.hero-img {
+  position: relative;
+  display: flex;
+
+  flex: 1;
+  flex-basis: 25rem;
+  overflow: hidden;
+  margin-left: 5px;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.barcelona-span {
+  color: rgb(255, 139, 93);
+}
+.paris-span {
+  color: rgb(86, 124, 228);
+}
+
+.prague-span {
+  color: rgb(167, 110, 231);
+}
+.hero-desc h2 {
+  font-family: "Abril Fatface";
+  font-size: 5rem;
+}
+.hero-desc p {
+  padding: 3rem 0rem;
+  font-size: 1.5rem;
+  color: black;
+}
+.barcelona p{
+margin-bottom: 0px;
+}
+.barcelona-exp{
+margin-top: 0px;
+}
+.explore {
+  padding: 1rem 2rem;
+  background: none;
+  border: none;
+  color: black;
+  border: 1px solid black;
+  font-size: 1rem;
+  text-decoration: none;
+  align-self: flex-start;
+  cursor: pointer;
+}
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  opacity: 1;
+  clip-path: circle(50px at 100% -10%);
+  -webkit-clip-path: circle(50px at 100% -10%);
+}
+.burger {
+  cursor: pointer;
+}
+.nav-links {
+  font-size: 2rem;
+  flex-basis: 30rem;
+}
+.nav-links h4 {
+  padding: 3rem 1rem;
+}
+.contact {
+  flex-basis: 30rem;
+}
+.contact h4 {
+  font-size: 2rem;
+  padding: 2rem 0rem;
+}
+
+.reveal-img,
+.reveal-text {
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  background: rgb(233, 233, 233);
+  left: 0;
+  top: -15%;
+}
+
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+  transition-property: transform;
+  transform-origin: 75% 75%;
+}
+.cursor.nav-active {
+  background: rgb(86, 124, 228);
+  transform: scale(2);
+}
+.cursor.explore-active {
+  background: white;
+  transform: scale(2);
+}
+.cursor-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 0.5rem;
+  transform: translate(-50%, -50%);
+}
+.title {
+  position: relative;
+  overflow: hidden;
+}
+
+.scrollmagic-pin-spacer {
+  position: static !important;
+}
+body.hide {
+  overflow: hidden;
+}
+
+/* Other Pages */
+
+.city1,
+.city2,
+.city3 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  color: white;
+  margin-top: 0rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+.city-img {
+  margin: auto;
+  width: 100%;
+
+}
+.city-text {
+  flex: 1;
+  position: relative;
+  flex-basis: 25rem;
+}
+.city-img img {
+ height:100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.city-text h1 {
+  font-size: 6rem;
+  padding: 0rem 0rem;
+}
+
+.city1 h1 {
+  color: rgb(255, 139, 93);
+}
+.city2 h1 {
+  color: rgb(167, 110, 231);
+}
+.city3 h1 {
+  color: rgb(86, 124, 228);
+}
+
+.city-text p {
+  font-size: 2rem;
+  text-align: left;
+  padding: 2rem 2rem 2rem 0rem;
+  margin-bottom: 0rem;
+color: black;
+}
+.city-nr {
+  font-size: 15rem;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  color: white;
+  opacity: 0;
+}
+@media screen and (max-width: 610px){
+  
+.hero-desc{
+  padding-left: 10px;
+}
+.nav-links {
+  font-size: 1.3rem;
+  flex-basis: 30rem;
+}
+.contact{
+  font-size: 1.4rem;
+}
+}
+@media screen and (max-width: 1500px) {
+  .hero-img {
+    height: 50vh;
+  }
+  img{
+    object-fit: cover;
+  }
+  .city-text h1 {
+    font-size: 2rem;
+    padding: 1rem 0rem;
+  }
+  .city-text p {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  .city-img img {
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 500px) {
+  main {
+    width: 100%;
+    margin: 0;
+  }
+ #logo{
+  font-size: medium;
+ }
+ .line1,
+ .line2{
+  width: 1.5rem;
+}
+  .slide {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .hero-desc {
+    padding: 0;
+  }
+  .hero-img {
+    padding-top: 4rem;
+  }
+  .hero-desc h2 {
+    font-size: 1.6rem;
+    padding: 1rem 0rem;
+  }
+ .city-text p{
+   font-size: 1rem;
+ }
+ 
+ .hero-desc p {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  .explore {
+    width: 60%;
+    margin: auto;
+  }
+  .detail-slide {
+    width: 100%;
+    text-align: center;
+  }
+  .city-text p {
+    margin-bottom: 0rem;
+    padding: 10px;
+    margin : 10px;
+    text-align: left;
+  }
+  .city-text h1 {
+    margin: 1rem 0rem;
+  }
+  .city-img {
+    margin: auto;
+    margin-top: 0px
+    !important;
+    width: 90vh;
+  }
+  .city-img img {
+    object-fit: cover;
+  margin-top:0px;
+ }
+  .city-nr {
+    font-size: 8rem;
+  }
+  .nav-bar {
+    display: block;
+  }
+  .nav-links {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 150px;
+  }
+  .contact h4 {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+}
+@media only screen and (max-width:830px) and (min-width: 500px){
+  .city1,
+  .city2,
+  .city3 {
+  height: px;
+  } 
+  .detail-slide {
+    width: 100%;
+    text-align: center;
+  }
+  .city-text p {
+    margin-bottom: 0rem;
+    padding: 10px;
+    margin : 10px;
+    text-align: left;
+  }
+  .city-text h1 {
+    margin: 1rem 0rem;
+  }
+  .city-img {
+    margin: auto;
+    width: 90vh;
+  }
+  .city-img img {
+    object-fit: cover;
+  margin-top:50px;
+ }
+  .city-nr {
+    font-size: 8rem;
+  }
+  }
+ 
