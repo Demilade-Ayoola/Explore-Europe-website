@@ -381,12 +381,7 @@ color: black;
     padding: 3rem 1rem;
   }
 }
-@media only screen and (max-width:830px) and (min-width: 500px){
-  .city1,
-  .city2,
-  .city3 {
-  height: px;
-  } 
+@media only screen and (max-width:830px) and (min-width: 500px){ 
   .detail-slide {
     width: 100%;
     text-align: center;
@@ -411,5 +406,16 @@ color: black;
   .city-nr {
     font-size: 8rem;
   }
+.title{
+    padding-right: 1px;
   }
+ .title h2{
+   font-size: 3.0rem;
+   ;
+ } 
+ .barcelona h2{
+   font-size: 2.5rem
+   !important;
+ }  
+}
  
